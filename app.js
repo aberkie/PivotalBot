@@ -2,6 +2,7 @@ var dotenv = require('dotenv');
 var Botkit = require('botkit');
 var tracker = require('pivotaltracker');
 var moment = require('moment');
+var S = require('string');
 var utils = require('./utils');
 
 dotenv.load();
@@ -45,7 +46,7 @@ controller.hears(['https://www.pivotaltracker.com/story/show/(.*)'], 'direct_mes
                                     "fields": [
                                         {
                                             "title": "Status",
-                                            "value": story.currentState,
+                                            "value": S(story.currentState).capitalize().s,
                                             "short": true
                                         },
                                         {

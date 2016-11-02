@@ -13,6 +13,7 @@
     "botkit": "^0.4.0",
     "dotenv": "^2.0.0",
     "moment": "^2.15.2",
-    "pivotaltracker": "^0.1.4"
+    "pivotaltracker": "^0.1.4",
+    "string": "^3.3.3"
   }
 }
